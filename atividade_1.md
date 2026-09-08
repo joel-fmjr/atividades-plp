@@ -15,12 +15,15 @@ Indique quais das seguintes sentenças estão na linguagem gerada por essa gram�
 ```
 ### b) bbbab
 ```
-Como o símbolo inicial contem um 'a' acompanhado de <B>, e <B> sempre deriva para pelo menos um outro 'a' é impossível representar uma string com apenas um 'a' nessa gramática.
+Como o símbolo inicial contem um 'a' acompanhado de <B>, e <B> sempre deriva para pelo
+menos um outro 'a' é impossível representar uma string com apenas um 'a' nessa gramática.
 ```
 ### c) bbaaaaaa
 ```
-Como o símbolo inicial termina com um 'b', é impossível representar uma string sem um 'b' como último símbolo final da string nessa gramática.
+Como o símbolo inicial termina com um 'b', é impossível representar uma string sem um 'b' 
+como último símbolo final da string nessa gramática.
 ```
+
 ### d) bbaab
 ```bnf
 <S> ::= <A>a<B>b
@@ -96,6 +99,7 @@ graph TD
     NodoC3 --> NodoC10[c]
 
 ```
+
 ### c) bool a, b, c, d, e;
 ```bnf
 <tdecl> ::= <type> <varlist> ;
@@ -178,21 +182,21 @@ fim
 ```bnf
 <estrutura-while>      ::= while <exp-logica> do <corpo> fim
 
-<exp-logica>     ::= <exp-relacional>
-                   | <exp-logica> && <exp-relacional>
-                   | <exp-logica> || <exp-relacional>
+<exp-logica>           ::= <exp-relacional>
+                         | <exp-logica> && <exp-relacional>
+                         | <exp-logica> || <exp-relacional>
 
-<exp-relacional> ::= ( <operando> <op-rel> <operando> )
+<exp-relacional>        ::= ( <operando> <op-rel> <operando> )
 
-<operando>       ::= <id> | <num>
+<operando>              ::= <id> | <num>
 
-<op-rel>         ::= > | < | >= | <= | == | !=
+<op-rel>                ::= > | < | >= | <= | == | !=
 
-<id>             ::= a | b | ... | z | A | ... | Z
+<id>                    ::= a | b | ... | z | A | ... | Z
 
-<num>            ::= 0 | 1 | 2 | ... | 10 | ...
+<num>                   ::= 0 | 1 | 2 | ... | 10 | ...
 
-<corpo>          ::= instruções
+<corpo>                 ::= instruções
 ```
 
 ```bnf
@@ -213,4 +217,3 @@ fim
                     ::= while ( x < y ) && ( y <= 10 ) do <corpo> fim
                     ::= while ( x < y ) && ( y <= 10 ) do instruções fim
 ```
-
